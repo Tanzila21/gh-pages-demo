@@ -9,10 +9,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Copy files to public/
+      - name: Setup public folder
         run: |
           mkdir public
           cp -r src/* public/
